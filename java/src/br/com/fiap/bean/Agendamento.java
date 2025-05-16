@@ -39,6 +39,11 @@ public class Agendamento {
         this.status = "ausente";
     }
 
+    public void reagendar(LocalDateTime novaDataHora) {
+        this.dataHora = novaDataHora;
+        this.status = "reagendado";
+    }
+
     public String toString() {
         return String.format("Agendamento:\n- Paciente: %s\n- Data e Hora: %s\n- Especialidade: %s\n- Status: %s", usuario.getNome(), dataHora.toString(), especialidade, status);
     }

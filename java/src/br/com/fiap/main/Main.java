@@ -55,5 +55,36 @@ public class Main {
 
         Mensagem msgFinal = new Mensagem("Esperamos que seu atendimento tenha sido positivo!", "agradecimento");
         System.out.println(msgFinal);
+
+        System.out.print("\nDeseja remarcar a consulta? (sim/não): ");
+        String resposta = scanner.nextLine();
+
+        if (resposta.equalsIgnoreCase("sim")) {
+            System.out.println("\n--- Reagendamento ---");
+
+            System.out.print("Digite o novo DIA da consulta: ");
+            int novoDia = scanner.nextInt();
+
+            System.out.print("Digite o novo MÊS da consulta: ");
+            int novoMes = scanner.nextInt();
+
+            System.out.print("Digite o novo ANO da consulta: ");
+            int novoAno = scanner.nextInt();
+
+            System.out.print("Digite a nova HORA da consulta: ");
+            int novaHora = scanner.nextInt();
+
+            System.out.print("Digite os novos MINUTOS da consulta: ");
+            int novoMinuto = scanner.nextInt();
+            scanner.nextLine(); // limpa o buffer
+
+            LocalDateTime novaDataHora = LocalDateTime.of(novoAno, novoMes, novoDia, novaHora, novoMinuto);
+            agendamento.reagendar(novaDataHora);
+
+            System.out.println("Consulta remarcada com sucesso!");
+            System.out.println("Novo agendamento: " + agendamento);
+        } else {
+            System.out.println("Consulta mantida. Obrigado!");
+        }
     }
 }

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseHC - Basta um click para cuidar de você
+    </title>
+    <meta name="description"
+        content="Plataforma tecnológica para redução de absenteísmo com IA e análise preditiva. Transforme sua gestão de pessoas com dados em tempo real.">
+    <meta name="keywords"
+        content="absenteísmo, RH 4.0, gestão de pessoas, produtividade, saúde corporativa, IA, análise preditiva">
+    <link rel="shortcut icon" href="https://img.ge/i/kRUvV92.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./Eash.js"></script>
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="./assets/logo.png" alt="EaseHC">
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#solutions">Solução</a></li>
+                    <li><a href="#how-it-works">Funcionalidades</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">EaseHC</h1>
+                <p class="fade-in delay-1">Agendar, remarcar ou cancelar suas consultas e exames ficou muito mais fácil e rápido. Evite filas e ligações: com apenas alguns cliques, você cuida da sua saúde no seu tempo.
+
+Clique abaixo e gerencie seus compromissos de forma simples e segura.</p>
+              
+                </div>
+
+                    <div class="stats fade-in delay-3">
+                        <a href="#contact" class="stat-card clickable-card">
+                            <div class="stat-number">
+                                Agendar <br>
+                                Consulta
+                            </div>
+                        </a>
+                        <a href="#reschedule" class="stat-card clickable-card">
+                            <div class="stat-number">
+                                Remarcar <br>
+                                Consulta
+                            </div>
+                        </a>
+                        <a href="#cancel" class="stat-card clickable-card">
+                            <div class="stat-number">
+                                Cancelar <br>
+                                Consulta
+                            </div>
+                        </a>
+                    </div>
+    </section>
+
+    <!-- Text Solution Section -->
+    <section id="solutions">
+        <div class="container">
+            <div class="text-solution fade-in">
+                <h2>Soluções do EaseHC</h2>
+
+                <p>Nossa abordagem combina tecnologia de ponta com estratégias comprovadas para reduzir o absenteísmo de
+                    20% para 10% em 12 meses. Veja como nossa plataforma faz a diferença:</p>
+
+                <h3>1. Agendamento de Consultas</h3>
+                <p>Solução: Sistema de Agendamento Online Integrado</p>
+                <ul>
+                    <li>Plataforma web/app com acesso a horários disponíveis em tempo real.</li>
+                    <li>Chatbot ou Assistente Virtual para agendamento via mensagem (WhatsApp, SMS, Telegram).</li>
+                    <li>Lembretes Automatizados (e-mail, SMS, push notification) confirmando a consulta.</li>
+                    <li>Integração com prontuário eletrônico para evitar duplicidade de agendamentos.</li>
+                </ul>
+
+                <h3>2. Cancelamento ou Remarcação de Consultas</h3>
+                <p>Solução: Sistema de Autoatendimento para Cancelamento/Remarcação</p>
+                <ul>
+                    <li>Opção no site/app para cancelar ou remarcar sem necessidade de ligação.</li>
+                    <li>Política de reagendamento automático (sugere novos horários disponíveis).</li>
+                    <li>Alertas em tempo real para a equipe, permitindo realocação rápida da vaga.</li>
+                </ul>
+
+                <h3>3. Informações sobre Especialidades Médicas</h3>
+                <p>Solução: Portal de Especialidades</p>
+                <ul>
+                    <li>Banco de dados com descrições das especialidades, médicos e procedimentos.</li>
+                    <li>Chatbot inteligente para tirar dúvidas (ex.: "Qual médico trata dor nas costas?").</li>
+                    <li>Sistema de triagem inicial (sugere especialidade com base nos sintomas).</li>
+                </ul>
+
+                <h3>4. Orientações Pré-Consulta ou Pré-Exame</h3>
+                <p>Solução: Notificações Personalizadas e Acesso Rápido</p>
+                <ul>
+                    <li>Envio automático de orientações por e-mail/SMS (ex.: "Jejum de 8h para exame X").</li>
+                    <li>QR Code no agendamento que redireciona para um vídeo/tutorial explicativo.</li>
+                    <li>Chatbot de dúvidas frequentes (ex.: "Posso tomar água antes do exame?").</li>
+                </ul>
+
+                <h3>5. Localização e Como Chegar</h3>
+                <p>Solução: Integração com Mapas e Navegação</p>
+                <ul>
+                    <li>Link direto para Google Maps/Waze no lembrete de consulta.</li>
+                    <li>Recepção virtual (vídeo ou tour 360° da unidade).</li>
+                    <li>Chatbot para tirar dúvidas (ex.: "Onde estacionar?" ou "Qual ônibus pegar?").</li>
+                </ul>
+
+                <h3>Resultados </h3>
+                <p>Empresas que implementaram nossa solução alcançaram:</p>
+                <ul>
+                    <li>Redução de 20–40% nas faltas após a introdução de lembretes automatizados e facilidade de remarcação.</li>
+                    <li>Queda do absenteísmo para 12–15% em clínicas que antes registravam taxas acima de 25%.</li>
+                    <li>Diminuição de 50% no tempo ocioso dos médicos, graças a reagendamentos ágeis e preenchimento de vagas canceladas.</li>
+                    <li>Economia de até R$ 15.000 por mês em custos administrativos, com a redução de faltas e otimização de agendas.</li>
+                    <li>Menos ligações para a recepção (cerca de 30% a menos), já que pacientes passaram a usar o autoatendimento online.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Funciona</h2>
+                <p>Conheça os serviços da nossa plataforma </p>
+            </div>
+
+            <div class="work-steps">
+                <div class="work-step fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Facilidade com a sua Consulta</h3>
+                    <p>Agende, remarque ou cancele suas consultas e exames com facilidade!
+O Hospital das Clínicas agora oferece um sistema online rápido, seguro e prático.
+Clique aqui e gerencie seus compromissos.</p>
+                </div>
+
+                <div class="work-step fade-in delay-1">
+                    <div class="step-number">2</div>
+                    <h3>Especialidades Médicas</h3>
+                    <p>Você sabe qual médico procurar?
+Nosso sistema mostra o que cada especialidade faz, ajudando você a encontrar o cuidado certo para sua necessidade.</p>
+                </div>
+
+                <div class="work-step fade-in delay-2">
+                    <div class="step-number">3</div>
+                    <h3>Orientações Médicas </h3>
+                    <p>Vai passar por consulta no Hospital das Clínicas?
+Confira as orientações pré-consulta e evite imprevistos.</p>
+                </div>
+
+                <div class="work-step fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Notificação Instantânea</h3>
+                    <p>Receba notificações em tempo imediato após a conclusão da sua escolha na plataforma.</p>
+                </div>
+
+                <div class="work-step fade-in delay-1">
+                    <div class="step-number">5</div>
+                    <h3>Monitoramento</h3>
+                    <p>Acompanhamento em tempo real dos resultados com alertas inteligentes.</p>
+                </div>
+
+                <div class="work-step fade-in delay-2">
+                    <div class="step-number">6</div>
+                    <h3>Localização e Como Chegar</h3>
+                    <p>Saiba aonde ir, como chegar e tirar qualquer duvida do tipo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+   </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossa Equipe</h2>
+            </div>
+
+            <div class="team-members">
+                <div class="team-member fade-in">
+                    <div class="member-photo">
+                        <img src="https://media-gru1-2.cdn.whatsapp.net/v/t61.24694-24/482520365_2924436114391042_4146423967738795101_n.jpg?ccb=11-4&oh=01_Q5Aa1gHm6GPkr6FR5wDDWpJwI7Kh0OEDGocIbxdIP-_iB6OtNA&oe=68386DF4&_nc_sid=5e03e0&_nc_cat=100" alt="Altamir Lima">
+                    </div>
+                    <h3 class="member-name">Altamir Lima</h3>
+                    <div class="member-links">
+                        <a href="https://www.linkedin.com/in/nickolas-davi-17824b355/" target="_blank"
+                            title="LinkedIn">🔗</a>
+                        <a href="https://github.com/Nickolas0506" target="_blank" title="GitHub">🐙</a>
+                    </div>
+                </div>
+
+                <div class="team-member fade-in delay-1">
+                    <div class="member-photo">
+                        <img src="https://img.ge/i/pZ24869.jpeg" alt="Felipe Conte">
+                    </div>
+                    <h3 class="member-name">Felipe Conte</h3>
+                    <div class="member-links">
+                        <a href="https://www.linkedin.com/in/rafael-carvalho-meireles-0a3a87130/" target="_blank"
+                            title="LinkedIn">🔗</a>
+                        <a href="https://github.com/rafaelcmeireles" target="_blank" title="GitHub">🐙</a>
+                    </div>
+                </div>
+
+                <div class="team-member fade-in delay-2">
+                    <div class="member-photo">
+                        <img src="blob:C:\Users\altamir.neto\Downloads\WhatsApp Image 2025-05-19 at 12.50.52.jpeg" alt="Pietro Galdino">
+                    </div>
+                    <h3 class="member-name">Pietro Galdino</h3>
+                    <div class="member-links">
+                        <a href="https://www.linkedin.com/in/ruan-luca-feliciano-de-carvalho-a36905267/" target="_blank"
+                            title="LinkedIn">🔗</a>
+                        <a href="https://github.com/RuanLuca" target="_blank" title="GitHub">🐙</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perguntas Frequentes</h2>
+                <p>Abaixo teremos Opções de perguntas do tipo, tire sua duvida caso precise</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">Como posso marcar uma consulta de forma rápida e online?</div>
+                    <div class="faq-answer">
+                        <p>Você pode agendar sua consulta em poucos cliques através do nosso portal online ou aplicativo. Basta:
+
+Acessar [link do agendamento]
+
+Selecionar a especialidade desejada
+
+Escolher o médico e horário disponível
+
+Confirmar seus dados
+
+Receber a confirmação por e-mail/SMS
+O sistema mostra em tempo real todos os horários disponíveis, inclusive com a opção de filtrar por localidade ou plano de saúde aceito.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-1">
+                    <div class="faq-question">Preciso cancelar ou remarcar minha consulta. Como fazer isso sem precisar ligar?</div>
+                    <div class="faq-answer">
+                        <p>Você pode cancelar ou remarcar diretamente:
+
+No mesmo link onde fez o agendamento
+
+Pelo nosso aplicativo (menu 'Minhas Consultas')
+
+Via WhatsApp [número dedicado]
+Até 24 horas antes da consulta, sem custos. O sistema sugere automaticamente novos horários disponíveis com o mesmo profissional. Para cancelamentos de última hora (menos de 24h), pedimos que entre em contato por gentileza.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-2">
+                    <div class="faq-question">Quais são os preparos necessários antes do meu exame ou consulta?</div>
+                    <div class="faq-answer">
+                        <p>Cada exame/consulta tem requisitos específicos que são informados automaticamente quando você agenda. Exemplos comuns:
+
+Jejum de 8h para exames de sangue
+
+Trazer exames anteriores e lista de medicamentos para consultas
+
+Usar roupas confortáveis para avaliações ortopédicas
+Todas as orientações completas são enviadas por e-mail/SMS após o agendamento, com lembrete 48h antes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-1">
+                    <div class="faq-question">Onde fica a clínica e qual é a melhor rota para chegar?</div>
+                    <div class="faq-answer">
+                        <p>UNossas unidades estão localizadas em:
+
+[Endereço principal] - Cerqueira César, São Paulo - SP, 05405-000
+
+Dicas de acesso:
+
+Estacionamento com um valor razoável
+
+Ônibus que param em frente: 775F-10 (Jd. das Palmas - Hospital das Clínicas)
+ 178L-10 (Lauzane Paulista - Hospital das Clínicas) 
+  817C-10 (Hosp. das Clínicas)
+  7245-10 (Hosp. das Clínicas) 
+
+Metrô mais próximo: Estação Clinicas, já com acesso integrado dentro do Hospital
+No dia da consulta, enviaremos um link com navegação em tempo real pelo WhatsApp.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-2">
+                    <div class="faq-question">Qual especialista devo procurar para o meu sintoma?</div>
+                    <div class="faq-answer">
+                        <p>Temos um assistente virtual que ajuda a identificar a especialidade adequada. Por exemplo:
+
+Dores articulares: Ortopedia ou Reumatologia
+
+Palpitações: Cardiologia
+
+Dores de cabeça persistentes: Neurologia
+Experimente nosso [chat de triagem] ou ligue para [número da central] para orientação. Evite autodiagnóstico - nosso time pode ajudar a direcionar você corretamente.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-1">
+                    <div class="faq-question">Receberei lembretes da minha consulta? Como funcionam?</div>
+                    <div class="faq-answer">
+                        <p>ASim! Nosso sistema envia:
+
+Confirmação imediata ao agendar
+
+Lembrete 72h antes por e-mail/SMS
+
+Alerta final 24h antes com preparos
+
+Notificação 1h antes (para consultas no app)
+Você pode escolher o canal preferido nas configurações da sua conta. Caso não receba, verifique sua caixa de spam ou entre em contato conosco.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in delay-2">
+                    <div class="faq-question">Há multas ou restrições para pacientes que faltam sem aviso?</div>
+                    <div class="faq-answer">
+                        <p>APara garantir acesso a todos:
+
+1ª falta sem aviso: advertência por e-mail
+
+2ª falta: bloqueio por 7 dias para novos agendamentos
+
+3ª falta: requer depósito não reembolsável de R$50 para novas marcações
+Exceções são consideradas com atestado médico. Esta política reduziu nossas faltas em 40%, permitindo melhor atendimento a todos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="solutions">
+        <div class="container">
+            <div class="section-title">
+                <h2>Agende sua Consulta</h2>
+                <p>Preencha o formulário para agendar sua atividade, e logo receberá uma notificação com os dados agendados: </p>
+            </div>
+
+            <form id="contactForm" class="contact-form fade-in">
+                <div class="form-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="Seu nome">
+                    <div id="nameError" class="error-message">Por favor, insira seu nome completo</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">CPF:</label>
+                    <input type="email" id="email" name="email" class="form-control" required
+                        placeholder="000.000.000-00">
+                    <div id="emailError" class="error-message">Por favor, insira seu CPF</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="(11) 1010-0000">
+                    <div id="phoneError" class="error-message">Por favor, insira um telefone válido</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Especialidade Médica: </label>
+                    <input type="text" id="company" name="company" class="form-control"
+                        placeholder="Qual Especialidade desejada ">
+                </div>
+
+                <div class="form-group">
+                    <label for="employees">Data e Hora:</label>
+                    <select id="employees" name="employees" class="form-control">
+                        <option value="">informe a data e hora na qual deseja</option>
+                        <option value="1-50">1-50</option>
+                        <option value="51-200">51-200</option>
+                        <option value="201-500">201-500</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="1000+">1000+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Como podemos ajudar?</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required
+                        placeholder="Descreva seus principais desafios com absenteísmo"></textarea>
+                    <div id="messageError" class="error-message">Por favor, insira sua mensagem</div>
+                </div>
+
+                <button type="submit" class="btn-submit">Solicitar Demonstração</button>
+
+                <div id="formFeedback" class="form-feedback"></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="reschedule" class="reschedule-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Remarcar Consulta</h2>
+                <p>Preencha o formulário para reagendar sua atividade, e logo receberá uma notificação com os dados reagendados:</p>
+            </div>
+    
+            <div class="reschedule-form-container">
+                <form class="reschedule-form">
+                    <div class="form-group">
+                        <label for="reschedule-email">Nome Completo</label>
+                        <input type="email" id="reschedule-email" required placeholder="Seu Nome">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="reschedule-cpf">CPF</label>
+                        <input type="text" id="reschedule-cpf" required placeholder="000.000.000-00">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="reschedule-date">Nova data desejada</label>
+                        <input type="date" id="reschedule-date" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="reschedule-time">Novo horário preferencial</label>
+                        <select id="reschedule-time" required>
+                            <option value="">Selecione um horário</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="reschedule-reason">Motivo do reagendamento (opcional)</label>
+                        <textarea id="reschedule-reason" placeholder="Descreva o motivo, se desejar"></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary">Solicitar Remarcação</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<section id="cancel" class="cancel-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Cancelar Consulta</h2>
+            <p>Preencha o formulário para cancelar sua atividade, e logo receberá uma notificação com os dados cancelados:</p>
+        </div>
+
+        <div class="cancel-form-container">
+            <form class="cancel-form">
+                <div class="form-group">
+                    <label for="cancel-email">Nome Completo</label>
+                    <input type="email" id="cancel-email" required placeholder="Seu Nome">
+                </div>
+
+                <div class="form-group">
+                    <label for="cancel-cpf">CPF</label>
+                    <input type="text" id="cancel-cpf" required placeholder="000.000.000-00">
+                </div>
+
+                <div class="form-group">
+                    <label for="cancel-date">Data da consulta</label>
+                    <input type="date" id="cancel-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cancel-time">Horário da consulta</label>
+                    <select id="cancel-time" required>
+                        <option value="">Selecione o horário</option>
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cancel-reason">Motivo do cancelamento (obrigatório)</label>
+                    <textarea id="cancel-reason" required placeholder="Por favor, informe o motivo do cancelamento"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="cancel-confirm" required>
+                    <label for="cancel-confirm">Confirmo que desejo cancelar esta consulta</label>
+                </div>
+
+                <button type="submit" class="btn btn-danger">Confirmar Cancelamento</button>
+            </form>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-about">
+                    <h3>EaseHC</h3>
+                    <p>"Basta um Click para cuidar de você"</p>
+                    <div class="social-links">
+            
+                  
+                </div>
+
+                <div class="footer-column">
+                    <h3>Plataforma</h3>
+                    <ul>
+                        <li><a href="#solutions">Solução Tecnológica</a></li>
+                        <li><a href="#how-it-works">Funcionalidades</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>📞 (11) 0000-0000</li>
+                        <li>✉️ Suporte@EaseHC.com</li>
+                        <li>🏢 R. Dr. Ovídio Pires de Campos, 225 - Cerqueira César, São Paulo - SP, 05403-010</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 InovaHC Pro. Todos os direitos reservados. | <a href="#">Política de Privacidade</a> | <a
+                        href="#">Termos de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

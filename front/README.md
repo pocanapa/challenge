@@ -6,16 +6,16 @@ Este projeto foi desenvolvido como parte da Sprint do Challenge 2025 do curso de
 Estrutura de Pastas e Arquivos
 A estrutura do projeto está organizada da seguinte forma:
 
-Sprint-Front/
-index.html
-styles.css
-eash.js
-imagens/
-WhatsApp Image 2025-05-19 at 18.45.59.jpg
-WhatsApp Image 2025-05-19 at 18.40.52.png
-WhatsApp_Image_2025-05-12_at_13.02.18__1_-removebg-preview.jpg
-linkedin.svg
-github.svg
+- Sprint-Front/
+  - index.html
+  - styles.css
+  - eash.js
+ - imagens/
+  - WhatsApp Image 2025-05-19 at 18.45.59.jpg
+  - WhatsApp Image 2025-05-19 at 18.40.52.png
+  - WhatsApp_Image_2025-05-12_at_13.02.18__1_-removebg-preview.jpg
+  - linkedin.svg
+  - github.svg
 
 Tecnologias Utilizadas
 - JavaScript
